@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply w-screen overflow-x-hidden bg-background;
+  }
+  header {
+    @apply fixed top-0 pt-2 flex w-screen z-50 bg-gradient-to-b from-background via-background to-transparent;
+  }
+  nav {
+    @apply layout flex justify-between items-center layout rounded-t-2xl rounded-b;
+  }
+  main {
+    @apply layout min-h-screen p-0 prose py-24;
+  }
+  section {
+    @apply layout flex-col justify-center items-center;
+  }
+  footer {
+    @apply fixed bottom-0 pb-4 flex items-center justify-center gap-sm w-screen bg-gradient-to-b from-transparent via-background to-background;
+  }
+}
+
+@layer components {
+  .site-padding {
+    @apply p-2 px-4;
+  }
+  .gap-sm {
+    @apply gap-4;
+  }
+  .gap-lg {
+    @apply gap-5;
+  }
+  .layout {
+    @apply flex w-full max-w-screen-lg mx-auto site-padding;
+  }
+  .logo {
+    @apply w-16 h-16 bg-primary hover:bg-secondary rounded-full trans;
+  }
+  .logo svg {
+    @apply text-nav p-2 trans;
+  }
+  .menu {
+    @apply bg-primary hover:bg-secondary h-fit font-body font-bold uppercase text-nav text-lg px-3.5 py-0.5 rounded-full trans;
+  }
+  .icon {
+    @apply h-full w-7 m-auto;
+  }
+  .prose {
+    @apply font-body text-text prose-sm md:prose-base leading-normal prose-p:mb-0.5 prose-headings:mt-0 prose-headings:text-primary prose-headings:font-black prose-headings:uppercase prose-h4:mb-0 prose-h5:text-xs prose-h5:mb-3;
+  }
+  .trans {
+    @apply transition duration-300 ease-in-out;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #0a0b0b;
+}

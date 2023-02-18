@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "images"
+public_folder: "images"
+
+site_url: https://mrsodonoghue.netlify.app
+display_url: https://mrsodonoghue.netlify.app
+logo_url: https://mrsodonoghue.netlify.app/ModBadge.png
+
+collections:
+  - label: "Cafe"
+    name: "cafe"
+    folder: "content/cafe"
+    media_folder: ""
+    format: "frontmatter"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "number", name: "order" }
+
+  - label: "Bakery"
+    name: "bakery"
+    folder: "content/bakery"
+    media_folder: ""
+    format: "frontmatter"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "number", name: "order" }
