@@ -19,7 +19,7 @@ collections:
     identifier_field: name
     slug: "{{slug}}"
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "number", name: "order" }
@@ -34,7 +34,7 @@ collections:
     identifier_field: name
     slug: "{{slug}}"
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "number", name: "order" }
