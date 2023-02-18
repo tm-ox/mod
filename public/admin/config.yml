@@ -7,7 +7,7 @@ public_folder: "images"
 
 site_url: https://mrsodonoghue.netlify.app
 display_url: https://mrsodonoghue.netlify.app
-logo_url: https://mrsodonoghue.netlify.app/ModBadge.png
+logo_url: https://mrsodonoghue.netlify.app/images/ModBadge.png
 
 collections:
   - label: "Cafe"
@@ -23,6 +23,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "number", name: "order" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Bakery"
     name: "bakery"
@@ -37,3 +38,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "number", name: "order" }
+      - { label: "Body", name: "body", widget: "markdown" }
