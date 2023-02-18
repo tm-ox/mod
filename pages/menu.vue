@@ -1,5 +1,5 @@
 <template>
-  <main class="items-start">
+  <main>
     <section>
       <h1>Coming Soon</h1>
     </section>
