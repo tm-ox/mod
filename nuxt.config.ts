@@ -6,4 +6,7 @@ export default defineNuxtConfig({
         anchorLinks: false,
       },
     },
+    plugins: [
+      {src: '~/plugins/vue-gtag',}
+  ]
   });
