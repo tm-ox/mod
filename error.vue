@@ -12,6 +12,9 @@
 </template>
 
 <script>
+useHead({
+  title: "Mrs O'Donoghue - Home Made Foods",
+});
 export default {
   props: {
     error: {

@@ -18,6 +18,7 @@ useServerSeoMeta({
   twitterCard: "summary_large_image",
 });
 useHead({
+  title: "Mrs O'Donoghue - Home Made Foods",
   script: [
     { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
   ],
