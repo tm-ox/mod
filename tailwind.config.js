@@ -23,6 +23,9 @@ module.exports = {
       fontFamily: {
         body: ["Mulish", "sans-serif"],
       },
+      dropShadow: {
+        "3xl": "3px 3px 3px rgba(10, 11, 11, 0.5)",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

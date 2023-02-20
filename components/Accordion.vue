@@ -5,9 +5,12 @@
       class="peer absolute top-0 inset-x-0 w-full h-10 opacity-0 z-10 cursor-pointer"
     />
     <div
-      class="absolute top-0.5 left-4 transition-transform rotate-0 peer-checked:rotate-180"
+      class="absolute top-0.5 left-4 transition-transform rotate-0 drop-shadow-3xl"
     >
-      <Icon name="ph:arrow-circle-down-right-fill" class="icon w-8" />
+      <Icon
+        name="bi:arrow-down-right-circle-fill"
+        class="icon w-7 bg-background rounded-full"
+      />
     </div>
     <div class="ml-16">
       <slot name="sectionName" />

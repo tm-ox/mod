@@ -6,4 +6,7 @@ export default defineNuxtConfig({
         anchorLinks: false,
       },
     },
+    app: {
+      pageTransition: { name: 'page', mode: 'out-in' }
+    },
   });
