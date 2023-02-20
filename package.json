@@ -15,7 +15,6 @@
     "nuxt-icon": "^0.3.2"
   },
   "dependencies": {
-    "vue-gtag": "^2.0.1",
-    "vue-gtag-next": "^1.14.0"
+    "vue-gtag": "^2.0.1"
   }
 }
