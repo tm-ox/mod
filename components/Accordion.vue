@@ -4,15 +4,13 @@
       type="checkbox"
       class="peer absolute top-0 inset-x-0 w-full h-10 opacity-0 z-10 cursor-pointer"
     />
-    <div
-      class="absolute top-0.5 left-4 transition-transform rotate-0 drop-shadow-3xl"
-    >
+    <div class="absolute top-0.5">
       <Icon
         name="bi:arrow-down-right-circle-fill"
-        class="icon w-7 bg-background rounded-full"
+        class="icon w-5 md:w-[24px] mt-1.5 md:mt-0 bg-background rounded-full"
       />
     </div>
-    <div class="ml-16">
+    <div class="ml-9 md:ml-10">
       <slot name="sectionName" />
     </div>
     <div

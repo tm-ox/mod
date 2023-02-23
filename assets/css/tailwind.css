@@ -21,7 +21,10 @@
     @apply layout flex-col justify-center items-center;
   }
   footer {
-    @apply fixed bottom-0 pb-4 flex items-center justify-center gap-sm w-screen bg-gradient-to-b from-transparent via-background to-background;
+    @apply fixed bottom-0 pb-4 flex flex-col items-center justify-center w-screen bg-gradient-to-b from-transparent via-background to-background;
+  }
+  hr {
+    @apply border-[1px] border-primary rounded-full mb-2 mt-2;
   }
 }
 
@@ -44,14 +47,24 @@
   .logo svg {
     @apply text-nav p-2 trans;
   }
-  .menu {
-    @apply bg-primary hover:bg-secondary h-fit font-body font-bold uppercase text-nav text-lg px-3.5 py-0.5 rounded-full trans  drop-shadow-3xl;
+  .menu-btn {
+    @apply bg-primary hover:bg-secondary h-fit font-body font-bold uppercase text-nav text-lg px-3.5 py-0.5 rounded-full trans drop-shadow-3xl;
+  }
+  .sosmed {
+    @apply pb-3 flex items-center justify-center gap-sm w-screen bg-gradient-to-b from-transparent via-background to-background;
   }
   .icon {
     @apply h-full w-7 m-auto;
   }
+  .menu-item {
+    @apply ml-4 md:ml-11;
+  }
   .prose {
-    @apply font-body text-text prose-sm md:prose-base leading-normal prose-p:mb-0.5 prose-headings:mt-0 prose-headings:text-primary prose-headings:font-black prose-headings:uppercase prose-h4:mb-0 prose-h5:text-xs prose-h5:mb-3;
+    @apply font-body text-text prose-sm md:prose-base prose-headings:mt-0 prose-headings:text-primary prose-headings:font-black prose-headings:uppercase 
+    prose-p:mb-0.5 prose-p:leading-normal
+    prose-h2:mt-0  prose-h2:mb-3 
+    prose-h4:text-lg prose-h4:mb-0 prose-h4:leading-tight  
+    prose-h5:mb-3 prose-h5:font-semibold;
   }
   .trans {
     @apply transition duration-300 ease-in-out;

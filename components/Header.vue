@@ -12,7 +12,7 @@
           />
         </svg>
       </NuxtLink>
-      <NuxtLink to="/menu" class="menu">
+      <NuxtLink to="/menu" class="menu-btn">
         <h4 class="self-center">Menu</h4>
       </NuxtLink>
     </nav>
